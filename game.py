@@ -4,7 +4,7 @@ begin = 1
 end = 100                         # счетчик попыток
 number = np.random.randint(begin, end)    # загадали случайное число
 predict = 0 # предполагаемое число
-while True:                        # бесконечный цикл
+while begin < end:                        # бесконечный цикл
          
     count += 1    # плюсуем попытку
     predict = (begin + end) // 2
